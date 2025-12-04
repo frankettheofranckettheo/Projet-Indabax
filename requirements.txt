@@ -1,0 +1,96 @@
+# ==========================================
+# ASR Fellowship Challenge - Dependencies
+# ==========================================
+# Python 3.8+ required
+# Install: pip install -r requirements.txt
+
+# Deep Learning Framework
+torch>=2.0.0,<3.0.0
+torchvision>=0.15.0
+torchaudio>=2.0.0
+
+# Transformers & NLP
+transformers>=4.57.0
+datasets>=2.14.0
+tokenizers>=0.15.0
+
+# Audio Processing
+librosa>=0.10.0
+soundfile>=0.12.0
+pydub>=0.25.1
+audioread>=3.0.0
+
+# Speech Recognition Metrics
+jiwer>=3.0.0
+
+# Data Processing
+numpy>=1.24.0,<2.0.0
+pandas>=2.0.0
+scipy>=1.10.0
+
+# Hugging Face Hub
+huggingface-hub>=0.20.0
+
+# Utilities
+tqdm>=4.65.0
+psutil>=5.9.0
+
+# Report Generation
+reportlab>=4.0.0
+
+# Optional: Mixed Precision Training
+# accelerate>=0.25.0
+
+# Optional: Experiment Tracking
+# wandb>=0.16.0
+# tensorboard>=2.15.0
+
+# Optional: Development Tools
+# black>=23.0.0
+# isort>=5.12.0
+# flake8>=6.0.0
+# pytest>=7.4.0
+# pytest-cov>=4.1.0
+
+# ==========================================
+# System Requirements (non-Python)
+# ==========================================
+# - FFmpeg (audio processing)
+#   Linux: sudo apt-get install ffmpeg
+#   Mac: brew install ffmpeg  
+#   Windows: https://www.gyan.dev/ffmpeg/builds/
+#
+# - CUDA 11.0+ (for GPU acceleration, optional)
+#   Download from: https://developer.nvidia.com/cuda-downloads
+#
+# ==========================================
+# Hardware Requirements
+# ==========================================
+# Minimum:
+# - RAM: 8GB
+# - Disk: 30GB free
+# - CPU: 4+ cores
+#
+# Recommended:
+# - RAM: 16GB+
+# - Disk: 50GB+ free
+# - GPU: 8GB+ VRAM (RTX 3060 or better)
+# - CPU: 8+ cores
+#
+# ==========================================
+# Installation Notes
+# ==========================================
+#
+# 1. Install PyTorch with CUDA support (recommended):
+#    pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
+#
+# 2. Or install CPU-only version:
+#    pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cpu
+#
+# 3. Install remaining dependencies:
+#    pip install -r requirements.txt
+#
+# 4. Verify installation:
+#    python -c "import torch; print(f'PyTorch: {torch.__version__}'); print(f'CUDA: {torch.cuda.is_available()}')"
+#
+# ==========================================

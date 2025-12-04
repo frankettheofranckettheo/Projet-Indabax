@@ -1,0 +1,124 @@
+# ==========================================
+# ASR Fellowship Challenge - .gitignore
+# ==========================================
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual Environments
+asr_env/
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Jupyter Notebooks
+.ipynb_checkpoints/
+*.ipynb
+
+# PyTorch
+*.pth
+*.pt
+*.bin
+*.ckpt
+
+# ==========================================
+# Project-Specific Large Files
+# ==========================================
+
+# Dataset (too large for git)
+dataset/
+*.tar.xz
+*.tar.gz
+*.zip
+
+# Extracted Audio Files (15GB+)
+extracted_audio_train/
+extracted_audio_val/
+extracted_audio_test/
+*.webm
+*.wav
+*.mp3
+*.flac
+
+# Model Checkpoints (keep only best)
+adapter_results/*.pt
+!adapter_results/best_adapter_weights.pt
+
+# ==========================================
+# Generated Files
+# ==========================================
+
+# Results
+baseline_results/base_transcriptions.txt
+final_results/*.txt
+final_results/*.csv
+
+# Reports
+*.pdf
+!rapport_template.pdf
+
+# Logs
+*.log
+logs/
+wandb/
+tensorboard_logs/
+
+# Temporary Files
+tmp/
+temp/
+*.tmp
+*.bak
+
+# LaTeX Auxiliary Files
+*.aux
+*.out
+*.toc
+*.lof
+*.lot
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.bbl
+*.blg
+
+# OS
+Thumbs.db
+desktop.ini
+
+# ==========================================
+# Keep These Files
+# ==========================================
+!.gitkeep
+!README.md
+!requirements.txt
+!LICENSE
